@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.111);
+  border-radius: 20px;
+  padding: 0 20px;
+  backdrop-filter: blur(2px);
+  outline: 1px solid rgba(255, 255, 255, 0.264);
+}
+.nav nav {
+  display: flex;
+  gap: 20px;
+}
+.nav a {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 10px;
+  height: 2px;
+  background-color: rgb(10, 29, 207);
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav a:hover::before {
+  width: 83%;
+}
+
+.nav a.active::before {
+  width: 83%;
+}
