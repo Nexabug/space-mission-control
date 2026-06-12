@@ -1,0 +1,19 @@
+button {
+  color: white;
+  font-size: 20px;
+  min-width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  background-color: rgb(11, 109, 195);
+  outline: 1px solid rgb(0, 140, 255);
+  cursor: pointer;
+}
+button:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 40px rgba(0, 132, 255, 0.401);
+}

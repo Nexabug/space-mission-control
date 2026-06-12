@@ -1,8 +1,15 @@
 import React from "react";
-
-function Btn({ children, color, bg }) {
+import "./btn.css";
+function Btn({ children, color, bg, outline }) {
   return (
-    <button style={{ color: color, backgroundColor: bg }}>{children}</button>
+    <button
+      style={{
+        color: color,
+        backgroundColor: bg,
+      }}
+    >
+      {children}
+    </button>
   );
 }
 
