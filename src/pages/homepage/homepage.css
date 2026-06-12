@@ -3,6 +3,7 @@
   display: flex;
   text-transform: capitalize;
   justify-content: center;
+  min-height: 81vh;
 }
 
 .home-content {
@@ -33,13 +34,10 @@
   width: 100%;
   object-fit: cover;
   margin-top: -40px;
+  border-radius: 12px;
   transition: all 0.5s ease;
 }
 
-.hero-img img:hover {
-  transform: rotate(5deg);
-  border-radius: 20px;
-}
 .home-content p {
   font-size: 16px;
   letter-spacing: 1px;
@@ -49,4 +47,73 @@
 .btns {
   display: flex;
   gap: 20px;
+}
+.stats {
+  height: 100vh;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+.stats h1 {
+  font-size: 86px;
+  font-style: italic;
+  color: rgb(0, 157, 255);
+}
+.stats-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stats-card p {
+  background: linear-gradient(
+    180deg,
+    rgba(239, 239, 239, 0.641),
+    rgb(0, 145, 255)
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.stats-card {
+  position: relative;
+  min-width: 200px;
+  color: rgb(0, 119, 255);
+  background-color: rgba(255, 255, 255, 0.055);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.stats-card .stats-detail {
+  font-weight: 800;
+  background: linear-gradient(
+    180deg,
+    rgba(239, 239, 239, 0.641),
+    rgb(0, 145, 255)
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 96px;
+}
+
+.size-6 {
+  color: white;
+  align-self: flex-start;
+  width: 30px;
+}
+
+.stats-card:hover{
+ 
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 0 60px rgba(0, 200, 255, 0.147);
 }

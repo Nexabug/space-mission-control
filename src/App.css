@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 .body {
-
-  height: 100vh;
+  font-family: sans-serif;
+  min-height: 100vh;
   position: relative;
   z-index: 3;
   background: url("public/carl-wang-OCe8cTGymSQ-unsplash.jpg") no-repeat center
@@ -22,4 +22,14 @@
   height: 100%;
   backdrop-filter: blur(4px);
   z-index: -2;
+}
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: #00aaff;
+  z-index: 9999;
+  transition: width 0.5s ease-in;
 }
